@@ -24,7 +24,7 @@ WORKDIR /usr/share/nginx/html/
 COPY --from=build /app/build .
 
 #exposing the application:
-EXPOSE 81
+EXPOSE 80
 
 #Executing the application after creating image:
 CMD ["nginx", "-g", "daemon off;"]
