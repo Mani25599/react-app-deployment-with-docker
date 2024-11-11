@@ -11,7 +11,7 @@ pipeline {
         stage ('executing the file') {
             steps {
                 sh 'sudo ./build.sh'
-              sh'dckr_pat_O_Ys2Em8i4nutSnmbPeZTUWrHP4'
+              
                     
             
         }
