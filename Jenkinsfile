@@ -14,10 +14,8 @@ pipeline {
     }
          stage ('enetr password') {
             steps {
-                spawn sudo -s
-                   expect "password:"
-                  send "dckr_pat_O_Ys2Em8i4nutSnmbPeZTUWrHP4"
-                    interact
+               read -s -p "Enter password: " dckr_pat_O_Ys2Em8i4nutSnmbPeZTUWrHP4
+                   
         }
     }
 }
