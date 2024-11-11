@@ -9,14 +9,9 @@ pipeline {
 
         stage ('executing the file') {
             steps {
-                sh 'sudo ./build.sh'
+                sh './build.sh'
         }
     }
-         stage ('enetr password') {
-            steps {
-               read -s -p "Enter password: " dckr_pat_O_Ys2Em8i4nutSnmbPeZTUWrHP4
-                   
-        }
-    }
+        
 }
 }
