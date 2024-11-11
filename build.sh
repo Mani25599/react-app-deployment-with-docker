@@ -2,7 +2,7 @@
 
 #login into DockerHub:
 
-sudo docker login -u mani25599 -p Kargil@dhub$99
+sudo docker login -u mani25599 -p dckr_pat_O_Ys2Em8i4nutSnmbPeZTUWrHP4
 
 #stopping existing container:
 docker stop react
