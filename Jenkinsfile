@@ -1,9 +1,6 @@
 pipeline {
     agent any
-parameters {
-        string(name: 'Password', defaultValue: 'dckr_pat_O_Ys2Em8i4nutSnmbPeZTUWrHP4')
-       
-    }
+
     stages {
         stage ('changing the file permission') {
             steps {
@@ -14,9 +11,9 @@ parameters {
         stage ('executing the file') {
             steps {
                 sh 'sudo ./build.sh'
-                script {
-                    def apiKey = params.Password
-            }
+              sh'dckr_pat_O_Ys2Em8i4nutSnmbPeZTUWrHP4'
+                    
+            
         }
     }
 }
