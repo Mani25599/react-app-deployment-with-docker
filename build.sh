@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #login into DockerHub:
-docker logout
-docker login -u ${DOCKER_USERNAME} -p ${DOCKER_PASS}
+
+sudo docker login -u ${DOCKER_USERNAME} -p ${DOCKER_PASS}
 
 #stopping existing container:
 docker stop react
