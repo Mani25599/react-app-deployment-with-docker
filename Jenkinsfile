@@ -14,7 +14,10 @@ pipeline {
     }
          stage ('enetr password') {
             steps {
-                sh'dckr_pat_O_Ys2Em8i4nutSnmbPeZTUWrHP4'
+                spawn sudo -s
+                   expect "password:"
+                  send "dckr_pat_O_Ys2Em8i4nutSnmbPeZTUWrHP4"
+                    interact
         }
     }
 }
