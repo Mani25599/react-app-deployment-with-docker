@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo chmod 777 /var/run/docker.sock
 #login into DockerHub:
 sudo docker login -u $DOCKER_USERNAME -p $DOCKER_PASS
 
