@@ -11,7 +11,7 @@ sudo docker rm react
 sudo docker build -t react-ci/cd .
 
 #running a container from the created image:
-sudo docker run -d -it --name react -p 81:80 react-ci/cd
+sudo docker run -d -it --memory 6144m --name react -p 81:80 react-ci/cd
 
 #pushing the image to dockerhub:
 docker tag react-ci/cd mani25599/react-app:1
